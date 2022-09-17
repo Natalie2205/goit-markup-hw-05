@@ -13,6 +13,7 @@
     --background-hero-color: #C4C4C4;
     --primary-icon-color: #AFB1B8;
     --bg-icon-color: rgba(255, 255, 255, 0.1);
+    --bg-thumb-black: rgba(47, 48, 58, 0.8);
 }
 
 h1,
@@ -274,7 +275,26 @@ img {
 }
 
 .our-work-item {
+    position: relative;
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.our-work-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--primary-wh-color);
+}
+
+.our-work-thumb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--bg-thumb-black);
 }
 
 .section-title {
